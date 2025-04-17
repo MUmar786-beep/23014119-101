@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="logo5.png" rel="icon">
+    <!-- Add Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fashion Color</title>
+    <style>
+        /* Custom styles that Tailwind can't easily handle */
+        .dropdown:hover .drowpdown {
+            display: block;
+        }
+        .drowpdown {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="ribbon flex items-center justify-between px-4 py-3 bg-black border-b">
+            <div class="left flex items-center space-x-4">
+                <span>
+                    <a href="index.html"><img src="house1.png" alt="Home" class="w-6 h-6"></a>
+                </span>
+                <span class="relative flex items-center">
+                    <a href="#"><img src="search1.png" alt="Search" class="w-6 h-6 absolute left-2 top-1"></a>
+                    <input placeholder="Search" class="pl-8 pr-3 py-1 border rounded-full bg-black focus:outline-none focus:ring-1 focus:ring-gray-400">
+                </span>
+            </div>
+            <div class="center">
+                <a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/index.html"><img src="logo8.png" alt="Fashion Color Logo" class="h-12"></a> 
+            </div>
+            <div class="right flex items-center space-x-4">
+                <span>
+                    <a href="#"><img src="truck1.png" alt="Delivery" class="w-6 h-6"></a>
+                </span>
+                <span>
+                    <a href="#"><img src="cart.png" alt="Cart" class="w-6 h-6"></a>
+                </span>
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="nav bg-white shadow-sm">
+            <ul class="flex justify-center space-x-8 py-3">
+                <!-- MEN -->
+                <li class="list relative group">
+                    <a href="#" class="px-3 py-2 font-medium hover:text-gray-600">MEN</a>
+                    <div class="drowpdown absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-md z-10 hidden group-hover:block">
+                        <div class="downinner1 flex p-4">
+                            <ul class="w-1/2 pr-4">
+                                <h3 class="font-bold text-lg mb-2">Winter</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/Jackets.html" class="block py-1 hover:text-gray-600">Jacket</a></li>
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/coat.html" class="block py-1 hover:text-gray-600">Coat</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Jersy</a></li>
+                            </ul>
+                            <ul class="w-1/2 pl-4">
+                                <h3 class="font-bold text-lg mb-2">Summer</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Polo Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">T-Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Rough Jeans</a></li>
+                            </ul>
+                        </div>
+                        <div class="downinner2 p-4 border-t border-gray-200">
+                            <img src="./Jackets/frame.png" alt="Men's Collection" class="w-full h-auto rounded">
+                        </div>
+                    </div>
+                </li>
+
+                <!-- BOYS -->
+                <li class="list relative group">
+                    <a href="#" class="px-3 py-2 font-medium hover:text-gray-600">BOYS</a>
+                    <div class="drowpdown absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-md z-10 hidden group-hover:block">
+                        <div class="downinner1 flex p-4">
+                            <ul class="w-1/2 pr-4">
+                                <h3 class="font-bold text-lg mb-2">Winter</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/Jackets.html" class="block py-1 hover:text-gray-600">Jacket</a></li>
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/coat.html" class="block py-1 hover:text-gray-600">Coat</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Jersy</a></li>
+                            </ul>
+                            <ul class="w-1/2 pl-4">
+                                <h3 class="font-bold text-lg mb-2">Summer</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Polo Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">T-Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Rough Jeans</a></li>
+                            </ul>
+                        </div>
+                        <div class="downinner2 p-4 border-t border-gray-200">
+                            <img src="./Jackets/frame2.png" alt="Boys Collection" class="w-full h-auto rounded">
+                        </div>
+                    </div>
+                </li>
+
+                <!-- KIDS -->
+                <li class="list relative group">
+                    <a href="#" class="px-3 py-2 font-medium hover:text-gray-600">KIDS</a>
+                    <div class="drowpdown absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-md z-10 hidden group-hover:block">
+                        <div class="downinner1 flex p-4">
+                            <ul class="w-1/2 pr-4">
+                                <h3 class="font-bold text-lg mb-2">Winter</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/Jackets.html" class="block py-1 hover:text-gray-600">Jacket</a></li>
+                                <li><a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/coat.html" class="block py-1 hover:text-gray-600">Coat</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Jersy</a></li>
+                            </ul>
+                            <ul class="w-1/2 pl-4">
+                                <h3 class="font-bold text-lg mb-2">Summer</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Polo Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">T-Shirt</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Rough Jeans</a></li>
+                            </ul>
+                        </div>
+                        <div class="downinner2 p-4 border-t border-gray-200">
+                            <img src="./Jackets/frame3.png" alt="Kids Collection" class="w-full h-auto rounded">
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ACCESSORIES -->
+                <li class="list relative group">
+                    <a href="#" class="px-3 py-2 font-medium hover:text-gray-600">ACCESSORIES</a>
+                    <div class="drowpdown absolute left-0 mt-2 w-96 bg-white shadow-lg rounded-md z-10 hidden group-hover:block">
+                        <div class="downinner1 flex p-4">
+                            <ul class="w-1/2 pr-4">
+                                <h3 class="font-bold text-lg mb-2">Men</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Watch</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Tie</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Dress Shoes</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Perfoume</a></li>
+                            </ul>
+                            <ul class="w-1/2 pl-4">
+                                <h3 class="font-bold text-lg mb-2">Boys</h3>
+                                <hr class="border-t border-gray-300 mb-3">
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Braclet</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Male Necklace</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Slipper</a></li>
+                                <li><a href="#" class="block py-1 hover:text-gray-600">Dress Shoes</a></li>
+                            </ul>
+                        </div>
+                        <div class="downinner2 p-4 border-t border-gray-200">
+                            <img src="./Jackets/accessories.jpg" alt="Accessories" class="w-full h-auto rounded">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- HERO BANNER -->
+        <div class="poster mb-8">
+            <img class="post w-full h-auto rounded-lg shadow-md" src="B.png" alt="Fashion Color Collections - Winter Season and Sale 40%">
+        </div>
+        <hr class="my-6 border-gray-300">
+
+        <!-- COLLECTIONS -->
+        <div class="outer grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="overflow-hidden">
+                    <img src="Jackets2.jpg" alt="Winter Collection" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="text p-4 flex justify-between items-center">
+                    <a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/winter.html" class="link font-bold text-lg hover:text-gray-600">WINTER COLLECTION</a>
+                    <a href="file:///F:/uni/4th%20Semester/WST/Web_Development/Garments_store/tailwind/winter.html"><img src="arrow.png" alt="View" class="w-6 h-6"></a>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="overflow-hidden">
+                    <img src="./summer/summer9.jpg" alt="Summer Collection" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="text p-4 flex justify-between items-center">
+                    <a href="summer.html" class="link font-bold text-lg hover:text-gray-600">SUMMER COLLECTION</a>
+                    <a href="summer.html"><img src="arrow.png" alt="View" class="w-6 h-6"></a>
+                </div>
+            </div>
+
+            <div class="card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="overflow-hidden">
+                    <img src="./shirts/shirt2.jpg" alt="Casual Collection" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="text p-4 flex justify-between items-center">
+                    <a href="#" class="link font-bold text-lg hover:text-gray-600">CASUAL COLLECTION</a>
+                    <a href="#"><img src="arrow.png" alt="View" class="w-6 h-6"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SALE ITEMS -->
+        <div class="line flex items-center my-8">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <p class="px-4 text-xl font-bold text-center">50% OFF ON SALE</p>
+            <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+
+        <!-- FIRST PRODUCT ROW -->
+        <div class="first grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Jackets/jacket1.jpg" alt="Stylish Zipper" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Stylish Zipper</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">1500 RS.</p>
+                        <p class="new font-bold text-red-600">1200 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Jackets/jacket13.jpg" alt="Sleevless" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Sleevless</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">2500 RS.</p>
+                        <p class="new font-bold text-red-600">2200 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Jackets/jacket6.jpg" alt="Lather Jacket" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Lather Jacket</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">3000 RS.</p>
+                        <p class="new font-bold text-red-600">2700 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Jackets/jacket9.jpg" alt="Jacket" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Jacket</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">3500 RS.</p>
+                        <p class="new font-bold text-red-600">3200 RS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW STYLE SECTION -->
+        <div class="line flex items-center my-8">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <p class="px-4 text-xl font-bold text-center">NEW STYLE</p>
+            <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+
+        <!-- SECOND PRODUCT ROW -->
+        <div class="first grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Casual/casual1.jpg" alt="Dress Coat" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Dress Coat</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">5500 RS.</p>
+                        <p class="new font-bold text-red-600">5000 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Casual/casual3.jpg" alt="Dress Coat" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Dress Coat</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">5500 RS.</p>
+                        <p class="new font-bold text-red-600">5000 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Casual/casual5.jpg" alt="Dress Coat" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Dress Coat</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">5500 RS.</p>
+                        <p class="new font-bold text-red-600">5000 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Casual/casual2.jpg" alt="Dress Coat" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Dress Coat</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">5500 RS.</p>
+                        <p class="new font-bold text-red-600">5000 RS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRENDING SECTION -->
+        <div class="line flex items-center my-8">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <p class="px-4 text-xl font-bold text-center">TRENDING ONE</p>
+            <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+
+        <!-- THIRD PRODUCT ROW -->
+        <div class="first grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./Prince/prince4.jpg" alt="Prince Coat" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Prince Coat</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">8000 RS.</p>
+                        <p class="new font-bold text-red-600">7500 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./long/long4.jpg" alt="Sleevless" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Sleevless</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">12000 RS.</p>
+                        <p class="new font-bold text-red-600">11000 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./stylish/stylish3.jpg" alt="Casual Prince" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Casual Prince</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">7000 RS.</p>
+                        <p class="new font-bold text-red-600">6500 RS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="image overflow-hidden">
+                    <img src="./summer/summer2.jpg" alt="Casual Shirt" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <a href="#" class="first-text block font-medium text-lg mb-2 hover:text-gray-600">Casual Shirt</a>
+                    <div class="flex space-x-2">
+                        <p class="previous text-gray-500 line-through">1800 RS.</p>
+                        <p class="new font-bold text-red-600">1500 RS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <ul class="space-y-2">
+                <h3 class="font-bold text-lg mb-3">Company</h3>
+                <li><a href="#" class="hover:text-gray-600">About Us</a></li>
+                <li><a href="#" class="hover:text-gray-600">FAQs</a></li>
+                <li><a href="#" class="hover:text-gray-600">Blogs</a></li>
+                <li><a href="#" class="hover:text-gray-600">Our Stores</a></li>
+            </ul>
+
+            <ul class="space-y-2">
+                <h3 class="font-bold text-lg mb-3">Contact</h3>
+                <li><a href="#" class="hover:text-gray-600">Contact Us</a></li>
+                <li><a href="#" class="hover:text-gray-600">Career</a></li>
+                <li><a href="#" class="hover:text-gray-600">Environment</a></li>
+                <li><a href="#" class="hover:text-gray-600">Initiatives</a></li>
+            </ul>
+
+            <ul class="space-y-2">
+                <h3 class="font-bold text-lg mb-3">Policies</h3>
+                <li><a href="#" class="hover:text-gray-600">Return</a></li>
+                <li><a href="#" class="hover:text-gray-600">Exchange</a></li>
+                <li><a href="#" class="hover:text-gray-600">Bargaining</a></li>
+                <li><a href="#" class="hover:text-gray-600">Privacy Policies</a></li>
+            </ul>
+
+            <ul class="space-y-2">
+                <h3 class="font-bold text-lg mb-3">Social Media</h3>
+                <li><a href="#" class="hover:text-gray-600">Facebook</a></li>
+                <li><a href="#" class="hover:text-gray-600">Instagram</a></li>
+                <li><a href="#" class="hover:text-gray-600">LinkdIn</a></li>
+                <li><a href="#" class="hover:text-gray-600">TikTok</a></li>
+            </ul>
+
+            <section class="space-y-4">
+                <h3 class="font-bold text-lg">Sign up For Latest Sale Updates!</h3>
+                <div class="flex">
+                    <input placeholder="Email Address" class="flex-grow px-3 py-2 border rounded-l focus:outline-none focus:ring-1 focus:ring-gray-400">
+                    <button class="bg-black text-white px-4 py-2 rounded-r hover:bg-gray-800 transition-colors">Submit</button>
+                </div>
+            </section>
+        </div>   
+        <p class="text-center mt-8 pt-4 border-t border-gray-300">Thanks for Visiting</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
